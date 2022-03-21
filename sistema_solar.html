@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tu peso en un lugar donde pesas menos </title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto planetas</p>
+    <script type="text/javascript">
+      var peso  =  parseFloat(prompt("cual es tu peso? "));
+      var planeta1 = parseInt(prompt("Elige tu planeta \n 1-mercurio  2-venus \n  3-luna   4-marte \n  5-jupiter  6-saturno \n  8-Urano  9-neptuno"));
+      var planeta;
+      var g_mercurio = 3.7;
+  		var g_venus = 8.87;
+  		var g_tierra = 9.8;
+      var g_luna = 1.62
+  		var g_marte = 3.7;
+  		var g_jupiter = 24.8;
+  		var g_saturno = 10.44;
+  		var g_urano = 8.7;
+  		var g_neptuno = 11.15;
+      var peso_final;
+      switch (planeta1) {
+        case 1:
+          var planeta = g_mercurio;
+          var p = "mercurio ";
+          break;
+        case 2:
+          var planeta = g_venus
+          var p = "venus ";
+          break;
+        case 3:
+          var planeta = g_luna
+          var p = "luna ";
+          break;
+        case 4:
+          var planeta = g_marte
+          var p = "marte ";
+          break;
+        case 5:
+          var planeta = g_jupiter
+          var p = "jupiter ";
+          break;
+        case 6:
+          var planeta = g_saturno
+          var p = "saturno ";
+          break;
+        case 7:
+          var planeta = g_urano
+          var p = "urano ";
+          break;
+        case 8:
+          var planeta = g_neptuno
+          var p = "neptuno ";
+          break;
+        default:
+          var planeta = g_tierra
+          var p = "tierra ";
+      }
+
+      peso_final = peso * planeta / g_tierra;
+      peso_final = parseFloat(peso_final.toFixed(2));
+      document.write("Tu peso en " + p + "<strong>" + peso_final + " Kilos</strong>");
+    </script>
+  </body>
+</html><!--comentario -->
