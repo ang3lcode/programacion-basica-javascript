@@ -10,5 +10,5 @@
 ---------------------
 
 # Introducción al documento
-El contenido de este documento esta basado en el curso del mismo nombre dictado por [Freddy Vega]() en [Platzi](https://platzi.com/).
+El contenido de este documento esta basado en el curso del mismo nombre dictado por [Freddy Vega](https://github.com/freddier) en [Platzi](https://platzi.com/).
 
